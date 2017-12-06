@@ -1,0 +1,8 @@
+// Immutable
+const a = { foo: 1 }
+
+console.log(a);
+const change = obj => ({ ...obj, foo: 2 });
+
+console.log(change(a));
+console.log(a);
